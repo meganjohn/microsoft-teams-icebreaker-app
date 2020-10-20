@@ -15,7 +15,7 @@ stages:
 jobs:
   include:
     - stage: WikiUpdate
-      if: (branch = test-branch) AND (type = push)
+      if: (branch = v-abtan/test-branch) AND (type = push)
       script:
         - rm -rf ${REPO_SOURCE}
         - rm -rf ${REPO_DEST}
